@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:twitter/widgets/flat_button.dart';
 import 'package:twitter/widgets/entry_field.dart';
+import 'package:twitter/screens/signup_screen.dart';
 
 class SignIn extends StatefulWidget {
   const SignIn({Key? key}) : super(key: key);
@@ -50,10 +51,10 @@ class SignInState extends State<SignIn> {
                 const SizedBox(height: 20),
                 GestureDetector(
                   onTap: () {
-                    // Navigator.push(
-                      // context,
-                      // MaterialPageRoute(builder: (context) => SignUp()),
-                    // );
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => const SignUp()),
+                    );
                   },
                   child: Text('Sign up',
                       style: Theme.of(context).textTheme.bodyLarge!.copyWith(
