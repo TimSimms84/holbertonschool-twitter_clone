@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:twitter/widgets/flat_button.dart';
 import 'package:twitter/widgets/entry_field.dart';
 import 'package:twitter/screens/signup_screen.dart';
+import 'package:twitter/screens/forgot_password_screen.dart';
 
 class SignIn extends StatefulWidget {
   const SignIn({Key? key}) : super(key: key);
@@ -62,10 +63,19 @@ class SignInState extends State<SignIn> {
                           )),
                 ),
                 const SizedBox(height: 10),
-                Text('Forgot password?',
-                    style: Theme.of(context).textTheme.bodyLarge!.copyWith(
-                          color: Colors.blue,
-                        ))
+                GestureDetector(
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const ForgetPassword()),
+                    );
+                  },
+                  child: Text('Forget Password?',
+                      style: Theme.of(context).textTheme.bodyLarge!.copyWith(
+                            color: Colors.blue,
+                          )),
+                ),
               ],
             ),
           ),
