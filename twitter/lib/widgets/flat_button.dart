@@ -36,3 +36,17 @@ class CustomFlatButton extends StatelessWidget {
     );
   }
 }
+
+void main() {
+  runApp( MaterialApp(
+    home: Scaffold(
+      body: Center(
+        child: CustomFlatButton(
+          label: 'Login',
+          // ignore: avoid_print
+          onPressed: () => print('Button Pressed!'),
+        ),
+      ),
+    ),
+  ));
+}
