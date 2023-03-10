@@ -2,36 +2,61 @@ List<Map<String, dynamic>> userList = [
   {
     'name': 'Jean-Luc Picard',
     'username': 'captainpicard',
-    'imgUrl':
-        'https://www.startrek.com/sites/default/files/styles/content_full/public/images/2019-06/PIC-S1-Ep1-11.jpg?itok=0tjFVXdd',
+    'imgUrl': 'https://picsum.photos/200',
     'isVerified': true,
   },
   {
     'name': 'Kathryn Janeway',
     'username': 'captainjaneway',
-    'imgUrl':
-        'https://www.startrek.com/sites/default/files/styles/content_full/public/images/2019-06/VOY-S1-Ep1-14.jpg?itok=0W8d47Oy',
+    'imgUrl': 'https://picsum.photos/200',
     'isVerified': false,
   },
   {
     'name': 'Spock',
     'username': 'mrspock',
-    'imgUrl':
-        'https://www.startrek.com/sites/default/files/styles/content_full/public/images/2019-06/TOS-S1-Ep1-20.jpg?itok=stK55a7T',
+    'imgUrl': 'https://picsum.photos/200',
     'isVerified': true,
   },
   {
     'name': 'Kira Nerys',
-    'username': 'major_kira',
-    'imgUrl':
-        'https://www.startrek.com/sites/default/files/styles/content_full/public/images/2019-06/DS9-S1-Ep1-9.jpg?itok=JlA1MBhr',
+    'username': 'majorkira',
+    'imgUrl': 'https://picsum.photos/200',
     'isVerified': true,
   },
   {
     'name': 'Geordi La Forge',
-    'username': 'chief_engineer',
-    'imgUrl':
-        'https://www.startrek.com/sites/default/files/styles/content_full/public/images/2019-06/TNG-S1-Ep1-24.jpg?itok=zg6Umgw6',
+    'username': 'chiefengineer',
+    'imgUrl': 'https://picsum.photos/200',
+    'isVerified': false,
+  },
+  {
+    'name': 'Data',
+    'username': 'operations',
+    'imgUrl': 'https://picsum.photos/200',
+    'isVerified': true,
+  },
+  {
+    'name': 'Benjamin Sisko',
+    'username': 'commander',
+    'imgUrl': 'https://picsum.photos/200',
+    'isVerified': true,
+  },
+  {
+    'name': 'Worf',
+    'username': 'securitychief',
+    'imgUrl': 'https://picsum.photos/200',
+    'isVerified': true,
+  },
+  {
+    'name': 'Deanna Troi',
+    'username': 'shipscounselor',
+    'imgUrl': 'https://picsum.photos/200',
+    'isVerified': false,
+  },
+  {
+    'name': 'Beverly Crusher',
+    'username': 'chiefmedicalofficer',
+    'imgUrl': 'https://picsum.photos/200',
     'isVerified': false,
   }
 ];

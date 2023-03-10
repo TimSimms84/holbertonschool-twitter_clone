@@ -21,13 +21,14 @@ class CustomEntryField extends StatelessWidget {
         borderRadius: BorderRadius.circular(30),
         border: Border.all(color: Colors.blue),
       ),
-      child: TextField(
-        controller: controller,
-        obscureText: isPassword,
-        decoration: InputDecoration(
-          hintText: hint,
-          border: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(30),
+      child: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 16.0),
+        child: TextField(
+          controller: controller,
+          obscureText: isPassword,
+          decoration: InputDecoration(
+            hintText: hint,
+            border: InputBorder.none,
           ),
         ),
       ),
