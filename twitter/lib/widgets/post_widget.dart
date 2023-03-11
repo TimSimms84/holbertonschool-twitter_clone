@@ -7,6 +7,7 @@ class PostWidget extends StatelessWidget {
   final String imgUrl;
   final bool isVerified;
   final String postText;
+  final List<String> hashtags;
 
   const PostWidget({
     Key? key,
@@ -15,6 +16,7 @@ class PostWidget extends StatelessWidget {
     required this.imgUrl,
     required this.isVerified,
     required this.postText,
+    required this.hashtags,
   }) : super(key: key);
 
   @override
@@ -71,6 +73,21 @@ class PostWidget extends StatelessWidget {
                       postText,
                       style: Theme.of(context).textTheme.bodyMedium,
                     ),
+                    if (hashtags.isNotEmpty) ...[
+                      const SizedBox(height: 10),
+                      Wrap(
+                        spacing: 5,
+                        runSpacing: 5,
+                        children: [
+                          ...hashtags.map(
+                            (tag) => Text(
+                              '#$tag',
+                              style: const TextStyle(color: Colors.blue),
+                            ),
+                          ),
+                        ],
+                      ),
+                    ],
                     const SizedBox(height: 10),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -130,9 +147,14 @@ class PostWidget extends StatelessWidget {
                             ),
                           ],
                         ),
-                        Icon(
-                          Icons.share,
-                          color: Theme.of(context).primaryColorLight,
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.end,
+                          children: [
+                            Icon(
+                              Icons.share,
+                              color: Theme.of(context).primaryColorLight,
+                            ),
+                          ],
                         ),
                       ],
                     ),
@@ -147,7 +169,6 @@ class PostWidget extends StatelessWidget {
     );
   }
 }
-
 
 void main() {
   runApp(MaterialApp(
@@ -165,6 +186,7 @@ void main() {
             imgUrl: post['imgUrl'],
             isVerified: post['isVerified'],
             postText: post['postText'],
+            hashtags: post['hashtags'],
           );
         },
       ),
