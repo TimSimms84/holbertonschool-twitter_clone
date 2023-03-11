@@ -24,12 +24,12 @@ class HomeScreenState extends State<HomeScreen> {
   }
 }
 
-void main() {
-  runApp(const MaterialApp(
-    home: Scaffold(
-      body: Center(
-        child: HomeScreen(),
-      ),
-    ),
-  ));
-}
+// void main() {
+//   runApp(const MaterialApp(
+//     home: Scaffold(
+//       body: Center(
+//         child: HomeScreen(),
+//       ),
+//     ),
+//   ));
+// }

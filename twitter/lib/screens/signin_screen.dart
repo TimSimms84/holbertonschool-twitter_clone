@@ -5,6 +5,9 @@ import 'package:twitter/widgets/flat_button.dart';
 import 'package:twitter/widgets/entry_field.dart';
 import 'package:twitter/screens/signup_screen.dart';
 import 'package:twitter/screens/forgot_password_screen.dart';
+import 'package:twitter/screens/home_screen.dart';
+import 'package:provider/provider.dart';
+import '../providers/app_state.dart';
 
 class SignIn extends StatefulWidget {
   const SignIn({Key? key}) : super(key: key);
@@ -45,8 +48,13 @@ class SignInState extends State<SignIn> {
                 CustomFlatButton(
                   label: 'Submit',
                   onPressed: () {
-                    print(_emailController.text);
-                    print(_passwordController.text);
+                    Provider.of<AppState>(context, listen: false).setpageIndex =
+                        0;
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const HomeScreen()),
+                    );
                   },
                 ),
                 const SizedBox(height: 20),

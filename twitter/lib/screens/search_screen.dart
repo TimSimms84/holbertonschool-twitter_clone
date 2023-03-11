@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import '../widgets/entry_field.dart';
 import '../widgets/users_search_results_widget.dart';
 import '../assets/user_list.dart';
+import 'package:twitter/widgets/bottom_bar_menu.dart';
 
 class SearchScreen extends StatefulWidget {
   const SearchScreen({Key? key}) : super(key: key);
@@ -48,6 +49,7 @@ class SearchScreenState extends State<SearchScreen> {
           );
         },
       ),
+      bottomNavigationBar: const BottomMenuBar(),
     );
   }
 }
