@@ -24,6 +24,7 @@ class _NotificationsScreenState extends State<NotificationsScreen> {
             color: Colors.black,
           ),
         ),
+        centerTitle: true,
         actions: [
           IconButton(
             onPressed: () {},

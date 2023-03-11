@@ -3,7 +3,6 @@ import 'package:twitter/screens/signin_screen.dart';
 // import 'package:twitter/screens/home_screen.dart';
 import 'package:provider/provider.dart';
 import 'package:twitter/providers/app_state.dart';
-import 'package:twitter/screens/signin_screen.dart';
 
 void main() {
   runApp(const MyApp());

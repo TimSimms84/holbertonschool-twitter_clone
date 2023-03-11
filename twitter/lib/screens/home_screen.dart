@@ -17,6 +17,7 @@ class HomeScreenState extends State<HomeScreen> {
         backgroundColor: Colors.transparent,
         foregroundColor: Theme.of(context).primaryColorDark,
         title: const Text('Home'),
+        centerTitle: true,
       ),
       drawer: const SideBarMenu(),
       bottomNavigationBar: const BottomMenuBar(),

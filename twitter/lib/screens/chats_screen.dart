@@ -19,11 +19,12 @@ class _ChatsScreenState extends State<ChatsScreen> {
           backgroundImage: NetworkImage('https://picsum.photos/200'),
         ),
         title: const Text(
-          'Notifications',
+          'Chats',
           style: TextStyle(
             color: Colors.black,
           ),
         ),
+        centerTitle: true,
         actions: [
           IconButton(
             onPressed: () {},
